@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from "react";
 import {Runtime, Inspector} from "@observablehq/runtime";
-import notebook from "@heaversm/mozilla-ecosystem";
+import notebook from "./Test";
 
 function Graph() {
   const chartRef = useRef();
