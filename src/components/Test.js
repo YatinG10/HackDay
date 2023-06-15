@@ -1,3 +1,6 @@
+import Popup from './Popup';
+import { useState } from 'react';
+
 // https://observablehq.com/@heaversm/mozilla-ecosystem@196
 function _1(md){return(
     md`# Mozilla Ecosystem
@@ -22,27 +25,45 @@ function _1(md){return(
           .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
           .style("display", "block")
           .style("margin", "0 -14px")
-          .style("background", color(0))
+          .style("background", color(-1))
           .style("cursor", "pointer")
-          .on("click", (event) => zoom(event, root));
+          .on("click", (event) => zoom(event, root));    
     
       const node = svg.append("g")
         .selectAll("circle")
         .data(root.descendants().slice(1))
         .join("circle")
-          .attr("fill", d => d.children ? color(d.depth) : "#589ae0")
-          .attr("pointer-events", d => !d.children ? "none" : null)
-          .on("mouseover", function() { d3.select(this).attr("stroke", "#000"); })
-          .on("mouseout", function() { d3.select(this).attr("stroke", null); })
+          .attr("fill", d => d.children ? color(d.depth) : "#e6150e")
+        //   .attr("pointer-events", d => !d.children ? "none" : null)
+          .on("mouseover", function() { 
+            d3.select(this).attr("stroke", "#000"); 
+            d3.select(this).style("filter", "url(#glow"); 
+            d3.select(this).attr('fill-opacity', .8);
+
+        })
+          .on("mouseout", function() { 
+            d3.select(this).attr("stroke", null);
+            d3.select(this).attr('fill-opacity', 1);
+        })
         //   .on("click", (event, d) => focus !== d && (zoom(event, d), event.stopPropagation()));
         .on("click", (event, d) => {
             if (!d.children) {
-              window.open("https://www.youtube.com", "_blank");
+                alert("Intern: Dhruv Rebba\nEnterprise Technology - P&C Claims\nInjury Insights/Claims Telematics\nProficiencies:\nJava, Python, AWS, Computer Vision\nAbout: Dhruv is currently going to be a sophomore at Arizona State University for Computer Science & Cyber Security.");
             } else if (focus !== d) {
               zoom(event, d);
               event.stopPropagation();
             }
           });
+    
+        var tooltip = d3.select("#d3tooltip")
+        .append("div")
+        .attr("class", "tooltip") // define a nice css for it in class .tooltip
+        .text("Text here can be overwritten");
+
+        d3.select("#circleBasicTooltip")
+        .on("mouseover", () => (tooltip.style("visibility", "visible").text("I'm a circle!")))
+        .on("mousemove", () => (tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px")))
+        .on("mouseout", () => (tooltip.style("visibility", "hidden")));
           
     
       const label = svg.append("g")
@@ -124,7 +145,8 @@ function _1(md){return(
     d3.scaleLinear()
         .domain([0, 5])
         //.range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
-        .range(["#393473","#ffa266"])
+        .range(["#898b8c","#f2f4f5"])
+        //#f76363, #ebdada, 
         .interpolate(d3.interpolateHcl)
     )}
     
@@ -151,4 +173,4 @@ function _1(md){return(
       main.variable(observer("d3")).define("d3", ["require"], _d3);
       return main;
     }
-    
+

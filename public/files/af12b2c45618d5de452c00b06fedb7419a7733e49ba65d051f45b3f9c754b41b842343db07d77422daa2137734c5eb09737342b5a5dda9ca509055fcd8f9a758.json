@@ -1,8 +1,8 @@
 {
-  "name": "Mozilla Ecosystem",
+  "name": "Nexus",
   "children": [
     {
-      "name": "Pocket",
+      "name": "ATL",
       "children": [
         {
           "name": "Extension",
@@ -39,29 +39,29 @@
       ]
     },
     {
-      "name": "Hubs",
+      "name": "PHX",
       "children": [
         {
           "name": "Ops",
-          "value": 31908
+          "value": 3000
         },
         { "name": "Cloud", "value": 13864 },
         {
           "name": "Spoke",
-          "value": 111801
+          "value": 40000
         },
         {
           "name": "Website",
-          "value": 13864
+          "value": 17864
         },
         {
           "name": "Firefox Reality",
-          "value": 149717
+          "value": 25000
         }
       ]
     },
     {
-      "name": "Experiments",
+      "name": "DAL",
       "children": [
         {
           "name": "Experimenter",
@@ -89,13 +89,16 @@
           ]
         },
         {
-          "name": "Foxfooding"
+          "name": "Foxfooding",
+          "value": 100
         },
         {
-          "name": "Ideas@Mozilla"
+          "name": "Ideas@Mozilla",
+          "value": 100
         },
         {
-          "name": "Research"
+          "name": "Research",
+          "value": 100
         },
         {
           "name": "Rally"
@@ -114,11 +117,11 @@
       ]
     },
     {
-      "name": "Privacy & Security",
+      "name": "RDC",
       "children": [
         {
           "name": "Monitor",
-          "value": 50296
+          "value": 2000
         },
         {
           "name": "Relay",
@@ -133,38 +136,62 @@
         },
         {
           "name": "VPN",
-          "value": 1387596
+          "value": 3000
         }
       ]
     },
     {
-      "name": "Support Ecosystems",
+      "name": "BLM",
       "children": [
         {
-          "name": "FxA",
-          "value": 298345
+          "name": "Interns",
+          "value": 20000
         },
         {
-          "name": "Glean",
+          "name": "Enterprise Technology",
           "children": [
-            { "name": "Redash", "value": 22088 },
-            { "name": "GLAM", "value": 2006 },
-            { "name": "Glean", "value": 203417 },
-            { "name": "Dictionary", "value": 32210 },
-            { "name": "Glean.js", "value": 21855 },
-            { "name": "Glean Parser", "value": 4408 }
+            { 
+              "name": "Interns Coordinators", 
+              "children": [
+                { "name": "Allegra Thigrin", "value": 1000 },
+                { 
+                  "name": "Kim Monaghan", 
+                  "children": [
+                    { "name": "Carter Pomis", "value": 500 },
+                    { "name": "Crofton Perry", "value": 500 },
+                    { "name": "Harika Paturi", "value": 500 },
+                    { "name": "Ibrahim Muftee", "value": 500 },
+                    { "name": "Pranavi Chaganti", "value": 500 },
+                    { "name": "Dhruv Rebba", "value": 500 },
+                    { "name": "Shritik Akkala", "value": 500 },
+                    { "name": "Tyler Allen", "value": 500 },
+                    { "name": "Tyler Frankowiak", "value": 500 },
+                    { "name": "Vervin Fernandes", "value": 500 }
+                  ] 
+                },
+                { "name": "Kelli Matlock", "value": 1000 },
+                { "name": "Jami Becker", "value": 1000 },
+                { "name": "Kari Roach", "value": 1000 },
+                { "name": "Nancy Warden", "value": 1000 }
+              ]
+            },
+            { "name": "Claims", "value": 1000 },
+            { "name": "Fire and Auto", "value": 18000 },
+            { "name": "Life", "value": 32210 },
+            { "name": "Home", "value": 21855 },
+            { "name": "P&C", "value": 4408 }
           ]
         },
-        { "name": "Pontoon", "value": 36458 },
-        { "name": "Megaphone", "value": 400 },
-        { "name": "Push", "value": 4502 },
-        { "name": "Bedrock", "value": 667960 },
-        { "name": "Airflow", "value": 1930 },
-        { "name": "Socorro", "value": 179378 },
-        { "name": "Task Cluster", "value": 131138 },
-        { "name": "HTTPObservatory", "value": 3540 },
-        { "name": "Searchfox", "value": 3614 },
-        { "name": "Bergamot", "value": 567 }
+        { "name": "Law", "value": 36458 },
+        { "name": "Fire and Auto", "value": 400 },
+        { "name": "P&C", "value": 4502 },
+        { "name": "Home", "value": 30000 },
+        { "name": "Life", "value": 1930 },
+        { "name": "Marketing", "value": 15000 },
+        { "name": "Labs", "value": 3000 },
+        { "name": "Infosec", "value": 3540 },
+        { "name": "RDC", "value": 3614 },
+        { "name": "Other", "value": 567 }
       ]
     }
   ]
