@@ -26,6 +26,7 @@ function SearchBar({ placeholder, data }) {
     setFilteredData([]);
     setWordEntered("");
   };
+    
 
   return (
     <div className="search">
@@ -50,7 +51,8 @@ function SearchBar({ placeholder, data }) {
             return (
               <a className="dataItem" target="_blank" onClick={()=>{
                 setWordEntered(value.firstName);
-                setFilteredData([])
+                setFilteredData([]);
+                window.open('https://outlook.com', '_blank');
                 }}>
                 <p>{value.firstName} </p>
               </a>

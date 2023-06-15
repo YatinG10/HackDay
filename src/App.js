@@ -19,7 +19,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import logo from './state-farm-insurance-vector-logo.png';
 import SearchBar from "./components/SearchBar/SearchBar";
 import BookData from "./components/SearchBar/Data.json";
-import TableCell from "@mui/material/TableCell";
 
 function App() {
   return (
@@ -27,10 +26,11 @@ function App() {
       <div className="top">
         <img src={logo} className = "navbar-logo" alt='logo' />
         Nexus
-      </div>
-      <TableCell component="th" scope="row">
         <SearchBar placeholder="Enter Name" data={BookData} />
-      </TableCell>
+      </div>
+      {/* <div className="search-bar">
+        <SearchBar placeholder="Enter Name" data={BookData} />
+      </div> */}
       <Graph />
     </>
   );

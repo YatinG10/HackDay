@@ -1,5 +1,6 @@
 .searchInputs {
-    margin-top: 5px;
+    margin-top: 19px;
+    margin-left: 13em;
     display: flex;
   }
   
@@ -33,12 +34,19 @@
   }
   .searchIcon svg {
     font-size: 35px;
+    margin-top: 3px;
+    margin-left: 20px;
+    color: black;
   }
   
   .dataResult {
-    margin-top: 0px;
-    width: 200px;
+    /* margin-top: 0px; */
+    margin-top: 82px;
+    margin-left: 50.55em;
+    width: 204px;
     height: auto;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
