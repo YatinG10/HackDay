@@ -1,8 +1,8 @@
 {
-  "name": "Mozilla Ecosystem",
+  "name": "Nexus",
   "children": [
     {
-      "name": "Pocket",
+      "name": "ATL",
       "children": [
         {
           "name": "Extension",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "name": "Hubs",
+      "name": "PHX",
       "children": [
         {
           "name": "Ops",
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "name": "Experiments",
+      "name": "DAL",
       "children": [
         {
           "name": "Experimenter",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "name": "Privacy & Security",
+      "name": "RDC",
       "children": [
         {
           "name": "Monitor",
@@ -138,33 +138,57 @@
       ]
     },
     {
-      "name": "Support Ecosystems",
+      "name": "BLM",
       "children": [
         {
-          "name": "FxA",
+          "name": "Interns",
           "value": 298345
         },
         {
-          "name": "Glean",
+          "name": "Enterprise Technology",
           "children": [
-            { "name": "Redash", "value": 22088 },
-            { "name": "GLAM", "value": 2006 },
-            { "name": "Glean", "value": 203417 },
-            { "name": "Dictionary", "value": 32210 },
-            { "name": "Glean.js", "value": 21855 },
-            { "name": "Glean Parser", "value": 4408 }
+            { 
+              "name": "Interns Coordinators", 
+              "children": [
+                { "name": "Allegra Thigrin", "value": 2015 },
+                { 
+                  "name": "Kelli Matlock", 
+                  "children": [
+                    { "name": "Carter Pomis", "value": 2006 },
+                    { "name": "Crofton Perry", "value": 2006 },
+                    { "name": "Harika Paturi", "value": 2006 },
+                    { "name": "Ibrahim Muftee", "value": 2006 },
+                    { "name": "Pranavi Chaganti", "value": 2006 },
+                    { "name": "Dhruv Rebba", "value": 2006 },
+                    { "name": "Shritik Akkala", "value": 2006 },
+                    { "name": "Tyler Allen", "value": 2006 },
+                    { "name": "Tyler Frankowiak", "value": 2006 },
+                    { "name": "Vervin Fernandes", "value": 2006 }
+                  ] 
+                },
+                { "name": "Kim Monaghan", "value": 2006 },
+                { "name": "Jami Becker", "value": 2006 },
+                { "name": "Kari Roach", "value": 2006 },
+                { "name": "Nancy Warden", "value": 2006 }
+              ]
+            },
+            { "name": "Claims", "value": 2006 },
+            { "name": "Fire and Auto", "value": 203417 },
+            { "name": "Life", "value": 32210 },
+            { "name": "Home", "value": 21855 },
+            { "name": "P&C", "value": 4408 }
           ]
         },
-        { "name": "Pontoon", "value": 36458 },
-        { "name": "Megaphone", "value": 400 },
-        { "name": "Push", "value": 4502 },
-        { "name": "Bedrock", "value": 667960 },
-        { "name": "Airflow", "value": 1930 },
-        { "name": "Socorro", "value": 179378 },
-        { "name": "Task Cluster", "value": 131138 },
-        { "name": "HTTPObservatory", "value": 3540 },
-        { "name": "Searchfox", "value": 3614 },
-        { "name": "Bergamot", "value": 567 }
+        { "name": "Law", "value": 36458 },
+        { "name": "Fire and Auto", "value": 400 },
+        { "name": "P&C", "value": 4502 },
+        { "name": "Home", "value": 667960 },
+        { "name": "Life", "value": 1930 },
+        { "name": "Marketing", "value": 179378 },
+        { "name": "Labs", "value": 131138 },
+        { "name": "Infosec", "value": 3540 },
+        { "name": "RDC", "value": 3614 },
+        { "name": "Other", "value": 567 }
       ]
     }
   ]
